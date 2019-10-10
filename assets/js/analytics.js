@@ -46,8 +46,8 @@ $("#how-to-test-button").click(function() {
 
 // video analytics
 
-$("#getting-started-video").click(function() {
-    analytics.track("Opened getting started modal window");
+$("#demo-video").click(function() {
+    analytics.track("Clicked play on demo video");
 })
 
 // Pricing page analytics
@@ -75,6 +75,12 @@ $("#pricing-enterprise-button").click(function() {
 
 $("#pricing-insight-cards").hover(function() {
     analytics.track("Hovered over pricing insight cards");
+})
+
+// demo page analytics
+
+$("#get-started-button").click(function() {
+    analytics.track("Clicked on CTA");
 })
 
 // footer analytics
