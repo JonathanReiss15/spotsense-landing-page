@@ -196,13 +196,35 @@
         <div class="shape shape-style-1 shape-primary">
         </div>
 
-        <div class="container" style="padding-top: 20px">
+        <div class="container" style="padding-top: 40px">
           <div class="row">
-            <div class="col-md-12">
-              <h1 class="display-2 text-white text-center">About SpotSense</h1>
+            <div class="offset-md-2 col-md-8">
+              <h1 class="display-2 text-white text-center">Our mission is to help connect mobile apps to the physical world</h1>
+              <p class="lead text-white text-center pb-5">
+                At SpotSense, we asked ourselves how we could help app developers avoid screen based thinking and connect users to the real world. Through
+                the SpotSense web app and SDK, developers can easily leverage the precise location of their users to
+                provide them with relevant experiences where they are.
+              </p>
             </div>
           </div>
-          <div class="row">
+          <div class="container">
+            <div style="margin-bottom: 50px;">
+              <div class="row">
+                <div class="col-md-6 col-12 text-center">
+                  <img src="assets/img/misc/scene-bw.png"
+                    style="max-width: 100%;">
+                  <h3 class="text-white py-3">Screen based thinking</h3>
+                </div>
+                <div class="col-md-6 col-12 text-center">
+                  <img src="assets/img/misc/scene-color.png"
+                    style="max-width: 100%;">
+                  <h3 class="text-white py-3">The world as your interface</h3>
+                </div>
+    
+              </div>
+            </div>
+          
+          <!-- <div class="row">
             <div class="col-md-8 offset-md-2 text-white lead">
               <p class="lead">Within the last 10 years, mobile apps have become engrained in the way all of us interact
                 with the world. These mobile apps, however, seem to be addicted to screen based thinking—the idea that
@@ -228,7 +250,7 @@
                 Our mission is to empower developers to build experiences that are so in tune with the real world, their
                 users think it’s magic.
               </p>
-            </div>
+            </div>-->
           </div>
         </div>
         <!-- SVG separator -->
@@ -240,6 +262,30 @@
         </div>
       </section>
     </div>
+    <section class="section section-lg pt-20 shape-primary bg-white">
+      <!-- <div class="shape-primary"></div> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="card gradient-bg border-0">
+              <div class="p-5">
+                <div class="row align-items-center">
+                  <div class="col-lg-6">
+                    <h1 class="text-white">Connect your app users to the real world</h1>
+                    <p class="lead text-white mt-3">Add the proximity SDK to your app</p>
+                  </div>
+                  <div class="col-lg-5 ml-lg-auto mt-0 text-white">
+                    <a id="get-started-button-bottom-of-page-about" href="signup.html"
+                      class="btn btn-lg btn-block btn-success">Get notified</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--<section class="section" id="get-started-analytics">
       <div class="container">
@@ -348,6 +394,18 @@
     }();
   </script>
   <script src="./assets/js/analytics.js"></script>
+  <script type="text/javascript">
+    var link = document.getElementById('get-started-button-bottom-of-page-about');
+    analytics.trackLink(link, 'Clicked on CTA', {
+      location: 'Header',
+      color: 'Green',
+      text: 'Get notified',
+      CTA: 'Join Beta',
+      category: 'Home Page',
+      type: 'Button',
+      pageTitle: document.title
+    });
+  </script>
 
 </body>
 
