@@ -182,10 +182,9 @@
         <div class="container d-flex">
           <div class="col px-0">
             <div class="row">
-              <div class="col-lg-12 text-default mt-2">
+              <div class="col-lg-12 text-default mt-5 mb-5">
                 <h1 class="display-2 text-default text-center">Tutorials</h1>
-                <p class="lead text-center">Create highly personalized experiences for your mobile app with these easy
-                  to follow tutorials</p>
+                <p class="lead text-center">Use SpotSense as a Source in Segment to create highly personalized experiences for your mobile app.</p>
               </div>
             </div>
           </div>
@@ -197,7 +196,6 @@
             <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
           </svg>
         </div>
-        <hr>
       </section>
       <!-- 1st Hero Variation -->
     </div>
@@ -211,7 +209,7 @@
                 <div class="card bg-gradient-primary shadow border-0 mb-5">
                   <p class="description mt-5 text-center text-white">Analytics</p>
                   <div class="card-body py-3 text-center">
-                    <h4 class="text-white mb-5">Create a side by side comparison of foot traffic with Mixpanel insights</h4>
+                    <h4 class="text-white mb-5">Determine how long users stay at a location with Mixpanel insights</h4>
                     <div class="text-center">
                       <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary mr-2">
                         <img style="max-width: 100%" src="./assets/img/misc/SpotSense.png">
@@ -223,7 +221,7 @@
                     </div>
                     <hr>
 
-                    <a id="watch-tutorial-button" href="" class="btn btn-secondary mt-2 mb-2">Watch</a>
+                    <a id="mixpanel-duration-tutorial-button" href="" class="btn btn-secondary mt-2 mb-2">Select</a>
                   </div>
                 </div>
               </div>
@@ -244,7 +242,7 @@
                     </div>
                     <hr>
 
-                    <a id="watch-tutorial-button" href="" class="btn btn-secondary mt-2 mb-2">Watch</a>
+                    <a id="mixpanel-flow-tutorial-button" href="" class="btn btn-secondary mt-2 mb-2">Select</a>
                   </div>
                 </div>
               </div>
@@ -265,7 +263,7 @@
                     </div>
                     <hr>
 
-                    <a id="watch-tutorial-button" href="" class="btn btn-secondary mt-2 mb-2">Watch</a>
+                    <a id="hubspot-visit-tutorial-button" href="" class="btn btn-secondary mt-2 mb-2">Select</a>
                   </div>
                 </div>
               </div>
@@ -274,7 +272,7 @@
                   <div class="card bg-gradient-success shadow border-0 mb-5">
                     <p class="description mt-5 text-center text-white">Customer engagement</p>
                     <div class="card-body py-3 text-center">
-                      <h4 class="text-white mb-5">Trigger an Intercom chat when a user enters a region</h4>
+                      <h4 class="text-white mb-5">Trigger a chat when a user enters a region with Intercom</h4>
                       <div class="text-center">
                         <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary mr-2">
                           <img style="max-width: 100%" src="./assets/img/misc/SpotSense.png">
@@ -286,7 +284,7 @@
                       </div>
                       <hr>
   
-                      <a id="watch-tutorial-button" href="" class="btn btn-secondary mt-2 mb-2">Watch</a>
+                      <a id="intercom-chat-tutorial-button" href="" class="btn btn-secondary mt-2 mb-2">Select</a>
                     </div>
                   </div>
                 </div>
@@ -296,7 +294,7 @@
                   <div class="card bg-gradient-default shadow border-0 mb-5">
                     <p class="description mt-5 text-center text-white">Customer engagement</p>
                     <div class="card-body py-3 text-center">
-                      <h4 class="text-white mb-5">Trigger drip campaign after a user visits a location</h4>
+                      <h4 class="text-white mb-5">Trigger drip campaign after a user visits a location with Customer.io</h4>
                       <div class="text-center">
                         <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary mr-2">
                           <img style="max-width: 100%" src="./assets/img/misc/SpotSense.png">
@@ -308,7 +306,7 @@
                       </div>
                       <hr>
   
-                      <a id="watch-tutorial-button" href="" class="btn btn-secondary mt-2 mb-2">Watch</a>
+                      <a id="customerio-drip-tutorial-button" href="" class="btn btn-secondary mt-2 mb-2">Select</a>
                     </div>
                   </div>
                 </div>
@@ -317,7 +315,7 @@
                   <div class="card bg-gradient-primary shadow border-0 mb-5">
                     <p class="description mt-5 text-center text-white">For Fun</p>
                     <div class="card-body py-3 text-center">
-                      <h4 class="text-white mb-5">Turn on your lights when you enter beacon range</h4>
+                      <h4 class="text-white mb-5">Turn on your lights using IFTTT when you enter beacon range</h4>
                       <div class="text-center">
                         <div class="icon icon-lg icon-shape bg-gradient-white shadow rounded-circle text-primary mr-2">
                           <img style="max-width: 100%" src="./assets/img/misc/SpotSense.png">
@@ -329,7 +327,7 @@
                       </div>
                       <hr>
   
-                      <a id="watch-tutorial-button" href="" class="btn btn-secondary mt-2 mb-2">Watch</a>
+                      <a id="webhook-ifttt-tutorial-button" href="" class="btn btn-secondary mt-2 mb-2">Select</a>
                     </div>
                   </div>
                 </div>
@@ -403,6 +401,91 @@
       }
     }();
   </script>
+    <script type="text/javascript">
+      var link = document.getElementById('mixpanel-duration-tutorial-button');
+      analytics.trackLink(link, 'Viewed tutorial', {
+        location: 'Tutorial card',
+        color: 'White',
+        text: 'Determine how long users stay at a location with Mixpanel insights',
+        CTA: 'Select',
+        category: 'Analytics',
+        integration: 'Mixpanel',
+        type: 'Button',
+        pageTitle: document.title
+      });
+    </script>
+
+<script type="text/javascript">
+  var link = document.getElementById('mixpanel-flow-tutorial-button');
+  analytics.trackLink(link, 'Viewed tutorial', {
+    location: 'Tutorial card',
+    color: 'White',
+    text: 'Send offline location events to a Mixpanel Flow chart for analysis',
+    CTA: 'Select',
+    category: 'Analytics',
+    integration: 'Mixpanel',
+    type: 'Button',
+    pageTitle: document.title
+  });
+</script>
+
+<script type="text/javascript">
+  var link = document.getElementById('hubspot-visit-tutorial-button');
+  analytics.trackLink(link, 'Viewed tutorial', {
+    location: 'Tutorial card',
+    color: 'White',
+    text: 'Track visits of locations and send the data to your Hubspot CRM',
+    CTA: 'Select',
+    category: 'CRM',
+    integration: 'Hubspot',
+    type: 'Button',
+    pageTitle: document.title
+  });
+</script>
+
+<script type="text/javascript">
+  var link = document.getElementById('intercom-chat-tutorial-button');
+  analytics.trackLink(link, 'Viewed tutorial', {
+    location: 'Tutorial card',
+    color: 'White',
+    text: 'Trigger an Intercom chat when a user enters a region',
+    CTA: 'Select',
+    category: 'Customer Engagement',
+    integration: 'Intercom',
+    type: 'Button',
+    pageTitle: document.title
+  });
+</script>
+
+<script type="text/javascript">
+  var link = document.getElementById('customerio-drip-tutorial-button');
+  analytics.trackLink(link, 'Viewed tutorial', {
+    location: 'Tutorial card',
+    color: 'White',
+    text: 'Trigger drip campaign after a user visits a location',
+    CTA: 'Select',
+    category: 'Customer Engagement',
+    integration: 'Customer.io',
+    type: 'Button',
+    pageTitle: document.title
+  });
+</script>
+
+<script type="text/javascript">
+  var link = document.getElementById('webhook-ifttt-tutorial-button');
+  analytics.trackLink(link, 'Viewed tutorial', {
+    location: 'Tutorial card',
+    color: 'White',
+    text: 'Turn on your lights when you enter beacon range',
+    CTA: 'Select',
+    category: 'For Fun',
+    integration: 'IFTTT',
+    type: 'Button',
+    pageTitle: document.title
+  });
+</script>
+
+
   <script src="./assets/js/analytics.js"></script>
 
 
