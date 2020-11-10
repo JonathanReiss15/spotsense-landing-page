@@ -1,5 +1,7 @@
 # Landing page for SpotSense.io
 
+![spotsense landing page](https://i.ibb.co/r4hjBcG/Screen-Shot-2020-11-10-at-12-26-41-PM.png)
+
 ## How to get started:
 
 1. Navigate to folder in terminal
