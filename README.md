@@ -22,5 +22,3 @@ Good Examples:
 Bad Examples:
 * just using your name
 * using random strings of words
-
-Hit Jonny up with any questions!
